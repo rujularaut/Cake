@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(219, 203, 255);
+    color: #3c295e;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #4f3674;
+    margin-bottom: 10px;
+    animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.3; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.cake {
+    font-size: 250px;
+    justify-content: center;
+}
+
+.candles {
+    color: orange;
+}
+
+.dark-mode {
+    background-color: #3c295e;
+    color: #e4dcff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #a799d1;
+    border: none;
+    border-radius: 35px;
+    color: rgb(52, 40, 86);
+    margin: 60px;
+}
+
+button:hover {
+    background-color: #d9c2ff;
+    padding: 15px 25px;
+}
+
+#sparkles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.sparkle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, #ffffff 0%, #d1a3ff 100%);
+    border-radius: 50%;
+    animation: sparkleFloat 5.2s ease-out forwards;
+}
+
+@keyframes sparkleFloat {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1) rotate(0deg);
+    }
+    100% {
+        opacity: 1; /* No fading */
+        transform: translateY(-50px) scale(1.5) rotate(360deg);
+    }
+}
