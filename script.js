@@ -26,7 +26,7 @@ sparkle.style.height = `${size}px`;
         sparkle.style.boxShadow = `0 0 8px ${color}`;
 
         sparkleContainer.appendChild(sparkle);
-        setTimeout(() => sparkle.remove(), 1200);
+        setTimeout(() => sparkle.remove(), 12000);
     }
 
     const sound = document.getElementById('sparkleSound');
